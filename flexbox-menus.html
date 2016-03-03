@@ -1,0 +1,339 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learning Flexbox</title>
+	<meta name="description" content="Flexible menus in flexbox - studying from Lynda and Morten @ http://www.lynda.com/CSS-tutorials/Marking-up-five-types-menus/383780/423286-4.html">
+
+	<link rel="stylesheet" type="text/css" href="style-menus.css">
+	<link rel="stylesheet" type="text/css" href="style-cards.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="page" class="outer-wrap">
+	<header class="masthead clear">
+		<div class="centered site-branding">
+			<h1 class="site-title">Learning Flexbox</h1>
+		</div><!-- .centered .site-branding -->
+	</header><!-- .masthead -->
+
+	<main class="main-area">
+
+	<div class="centered">
+
+		<h1 class="section-title">Flexbox Menus</h1>
+		
+		<section class="menu-section">
+			<h2 class="menu-heading">Single Level Menu</h2>
+			<nav id="single-nav" class="single-nav menu" role="navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Motivation</a></li>
+				<li><a href="#">Language Skills</a></li>
+				<li><a href="#">Vocabulary</a></li>
+				<li><a href="#">Grammar</a></li>
+				<li><a href="#">Special Interest</a></li>
+				<li><a href="#">Events</a></li>
+			</ul>
+			</nav><!-- #single-nav .single-nav -->
+		</section><!-- .menu-section -->
+
+		<section class="menu-section">
+			<h2 class="menu-heading">Advanced Menu</h2>
+			<nav id="advanced-nav" class="advanced-nav menu" role="navigation">
+			<ul>
+				<li>
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-home"></i>
+						</div>
+						<div class="button-text">
+							Home
+							<span>Come on over</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-language"></i>
+						</div>
+						<div class="button-text">
+							Language
+							<span>Now you're speaking mine</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-rebel"></i>
+						</div>
+						<div class="button-text">
+							Alliance
+							<span>Rebel scum!</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-empire"></i>
+						</div>
+						<div class="button-text">
+							Empire
+							<span>Stormtroopers baby</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<div class="icon">
+							<i class="fa fa-file"></i>
+						</div>
+						<div class="button-text">
+							News
+							<span>What's goin' on?</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			</nav><!-- #advanced-nav .advanced-nav -->
+		</section><!-- .menu-section -->
+
+		<section class="menu-section">
+			<h2 class="menu-heading">Multi-level (drop-down) Menu</h2>
+			<nav id="dropdown-nav" class="dropdown-nav menu" role="navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Motivation</a></li>
+				<li class="has-children">
+					<a href="#">Language Skills<button class="dropdown-toggle" aria-expanded="false"><span></span></button>
+					<ul class="sub-menu">
+						<li><a href="#">Reading</a></li>
+						<li><a href="#">Writing</a></li>
+						<li><a href="#">Listening</a></li>
+						<li><a href="#">Speaking</a></li>
+					</ul>
+					</a>
+				</li>
+				<li><a href="#">Vocabulary</a></li>
+				<li><a href="#">Grammar</a></li>
+				<li class="has-children">
+					<a href="#">Special Interest<button class="dropdown-toggle" aria-expanded="false"><span></span></button>
+					<ul class="sub-menu">
+						<li><a href="#">Music</a></li>
+						<li><a href="#">Movies</a></li>
+						<li><a href="#">Manga (Comics)</a></li>
+						<li><a href="#">TV</a></li>
+					</ul>
+					</a>
+				</li>
+				<li><a href="#">Events</a></li>
+			</ul>
+			</nav><!-- #dropdown-nav .dropdown-nav -->
+		</section><!-- .menu-section -->
+
+		<section class="menu-section">
+			<h2 class="menu-heading">Social Menu</h2>
+			<nav id="social-nav" class="social-nav menu" role="navigation">
+			<ul>
+				<li><a href="http://www.twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+				<li><a href="http://www.facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+				<li><a href="http://www.linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+				<li><a href="http://www.youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+				<li><a href="http://www.instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+			</ul>
+			</nav><!-- #social-nav .social-nav -->
+		</section><!-- .menu-section -->
+
+		<section class="menu-section">
+			<h2 class="menu-heading">Mixed Menu (drop-down + social)</h2>
+			<div class="nav-mixed menu">
+				<nav id="dropdown-nav" class="dropdown-nav menu" role="navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Motivation</a></li>
+					<li class="has-children">
+						<a href="#">Language Skills<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child</span></button>
+						<ul class="sub-menu">
+							<li><a href="#">Reading</a></li>
+							<li><a href="#">Writing</a></li>
+							<li><a href="#">Listening</a></li>
+							<li><a href="#">Speaking</a></li>
+						</ul>
+						</a>
+					</li>
+					<li><a href="#">Vocabulary</a></li>
+					<li><a href="#">Grammar</a></li>
+					<li class="has-children">
+						<a href="#">Special Interest<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child</span></button>
+						<ul class="sub-menu">
+							<li><a href="#">Music</a></li>
+							<li><a href="#">Movies</a></li>
+							<li><a href="#">Manga (Comics)</a></li>
+							<li><a href="#">TV</a></li>
+						</ul>
+						</a>
+					</li>
+					<li><a href="#">Events</a></li>
+				</ul>
+				</nav><!-- #dropdown-nav .dropdown-nav -->
+
+				<nav id="social-nav" class="social-nav menu" role="navigation">
+				<ul>
+					<li><a href="http://www.twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+					<li><a href="http://www.facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+					<li><a href="http://www.linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+					<li><a href="http://www.youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+					<li><a href="http://www.instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+				</ul>
+				</nav><!-- #social-nav .social-nav -->
+			</div><!-- .nav-mixed -->
+		</section><!-- .menu-section -->
+
+	</div><!-- .centered -->
+
+	<div class="centered">
+
+		<h1 clas="section-title">Flexbox Cards</h1>
+
+		<section class="cards">
+
+			<article id="article-1" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-2" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-3" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-4" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-5" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-6" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-7" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-8" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="" alt="">
+					</figure>
+					<div class="card-content">
+						<h2></h2>
+						<p></p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+
+		</section><!-- .cards -->
+
+	</div><!-- .centered -->
+
+	<div class="content">
+
+		<header class="page-header">
+			<h1 class="section-title">Holy Grail Layout</h1>
+			<nav class="page-menu">Nav menu here</nav>
+		</header>
+
+		<main class="page-main">
+			<article class="post-content">
+				<h2>Title</h2>
+				<p>Paragraph(s)</p>
+			</article>
+		</main>
+
+		<aside class="sidebar">
+			<div class="squish-container">
+			<h3>Menu</h3>
+			<nav class="sidebar-menu">
+				<ul>
+					<li><a href="#">Menu Item</a></li>
+				</ul>
+			</nav>
+			</div>
+		</aside>
+
+		<footer class="page-footer">
+			<p>Content</p>
+		</footer>
+
+	</div><!-- .centered -->
+
+	</main><!-- .main-area -->
+
+	<footer class="footer-area centered">
+
+	</footer>
+	</div><!-- #page -->
+
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/menu-toggle.js"></script>
+</body>
+</html>

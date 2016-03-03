@@ -1,0 +1,66 @@
+/* 
+ * Card Styles
+ */
+
+body {
+	background: #f1f1f1;
+}
+.masthead {
+	background: #222;
+}
+.site-title {
+	color: white;
+}
+.card {
+	background: white;
+	margin-bottom: 2em;
+}
+.card a {
+	color: black;
+	text-decoration: none;
+}
+.card a:hover {
+	box-shadow: 3px 3px 8px #555;
+}
+.card-content {
+	padding: 1.618em;
+}
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	font-weight: normal;
+}
+.card-content p {
+	font-size: 95%;
+}
+
+/* Flexbox stuff */
+@media screen and (min-width: 40em) {
+
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: -1em;
+	}
+	.card {
+		display: flex;
+		/* flex: 0 1 calc(33% - 1em); /* Grow 0, shrink 1, width=33%-1em */
+		width: calc( 50% - 0.5em ); /* the same can be done with width - and supports older browsers */
+		margin-bottom: 1em;
+	}
+
+}
+
+@media screen and (min-width: 64em) {
+
+	.cards {
+		margin-top: inherit;
+	}
+
+	.card {
+		width: calc( 33% - 1em );
+		margin-bottom: 2em;
+	}
+
+}

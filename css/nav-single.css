@@ -1,0 +1,15 @@
+/*
+ * Single level nav menu
+ */
+
+ @media screen and (min-width: 30em) {
+ 	.single-nav ul {
+ 		display: flex;
+ 		flex-wrap: wrap; /* Doesn't allow menu squishing, pushes them down when too narrow */
+ 		justify-content: space-between; /* Default = flex-start (left) - so flex-end is (right) - center (center) - space-around (equal space around each box) - space-between (removes extra padding from the ends of the menu) */
+ 	}
+ 	.single-nav li {
+ 		flex: 1 0 auto; /* grow by 1, shrink by 0, base=auto - this only works with space-around or space-between, no more flex-start, flex-end, center */
+ 		text-align: center;
+ 	}
+ }

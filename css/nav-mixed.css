@@ -1,0 +1,10 @@
+/*
+ * Mixed nav styles
+ */
+
+.nav-mixed {
+	display: flex;
+	background: steelblue;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

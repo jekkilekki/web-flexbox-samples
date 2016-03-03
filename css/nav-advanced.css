@@ -1,0 +1,39 @@
+/*
+ * Advanced Menu CSS
+ */
+
+ .advanced-nav li a {
+ 	display: flex;
+ 	width: 100%;
+ 	justify-content: flex-start;
+ }
+
+ .icon {
+ 	flex: 0 0 1.5em; /* Grow 0, shrink 0, width=1.5em */
+ 	font-size: 2em;
+ }
+
+ .button-text {
+ 	font-size: 2em;
+ }
+
+ .button-text span {
+ 	display: block;
+ 	font-size: 50%;
+ 	font-weight: lighter;
+ 	font-style: italic;
+ }
+
+
+ @media screen and (min-width: 30em) {
+ 	.advanced-nav ul {
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 		justify-content: center;
+ 	}
+
+ 	.advanced-nav li {
+ 		display: flex; /* This now becomes a flexbox and whatever is inside will expand to fill the available space */
+ 		flex: 1 0 12em; /* Grow 1, shrink 0, width=12em */
+ 	}
+ }

@@ -1,0 +1,38 @@
+/*
+ * Holy Grail layout
+ */
+
+.site-title {
+	margin-bottom: 0;
+}
+
+.page-menu {
+	padding: 0.4em 1em;
+	color: white;
+	background: #dcdcdc;
+}
+
+.post-content {
+	padding: 0 1.4em 1.4em;
+}
+.sidebar {
+	padding: 0.5em 1.4em 1em;
+	background: silver;
+}
+.sidebar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar-menu a {
+	display: block;
+	padding: 0.4em 0;
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.sidebar-menu a:hover,
+.sidebar-menu a:focus {
+	background: #555;
+	color: #aaa;
+}
