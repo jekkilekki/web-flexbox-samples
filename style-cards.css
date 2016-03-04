@@ -22,8 +22,13 @@ body {
 .card a:hover {
 	box-shadow: 3px 3px 8px #555;
 }
-.card .thumbnail img {
-	max-width: 100%;
+.thumbnail {
+	margin: 0;
+	border-bottom: 1px solid #c3c3c3;
+}
+.thumbnail img {
+	width: 100%;
+	display: block;
 }
 .card-content {
 	padding: 1.618em;

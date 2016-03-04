@@ -1,0 +1,100 @@
+/*
+ * Holy Grail layout
+ */
+
+.site-title {
+	margin-bottom: 0;
+}
+
+.page-menu {
+	padding: 0.4em 1em;
+	color: white;
+	background: #dcdcdc;
+}
+
+.post-content {
+	padding: 0 1.4em 1.4em;
+}
+.sidebar {
+	padding: 0.5em 1.4em 1em;
+	background: silver;
+	overflow: hidden;
+	transition: padding 500ms ease, flex 500ms ease, color 250ms ease-in 300ms;
+}
+.sidebar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar-menu a {
+	display: block;
+	padding: 0.4em 0;
+	color: inherit;
+	text-decoration: none;
+	transition: all 300ms ease;
+}
+.sidebar-menu a:hover,
+.sidebar-menu a:focus {
+	background: #555;
+	color: #aaa;
+}
+
+/* Flexbox stuff */
+@media screen and (min-width: 40em) {
+	.outer-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+	.content {
+		display: flex;
+	}
+	.page-main {
+		flex: 1 1 auto;
+		order: 1;
+	}
+	.post-content {
+		max-width: 40em;
+		margin: 0 auto;
+	}
+	.sidebar {
+		flex: 0 0 12em;
+		order: 2;
+	}
+	.sidebar-left {
+		order: 0;
+	}
+	.no-sidebar {
+		flex-direction: column;
+	}
+	.hide {
+		flex: 0 0 0; /* Grow 0, shrink 0, width 0 */
+		padding: 0;
+		color: rgba( 0, 0, 0, 0 );
+		transition: color 250ms ease, flex 500ms ease 300ms, padding 500ms ease 300ms;
+	}
+}
+
+/* Sidebar switcher buttons */
+@media screen and (max-width: 40em) {
+	/* Hide switcher on small screens */
+	.sidebar-switcher {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	.sidebar-switcher {
+		position: absolute;
+		right: 0;
+		padding: 0.5 1em;
+		color: #404040;
+	}
+	.sidebar-switcher a {
+		color: #404040;
+		padding-left: 0.5em;
+	}
+	.sidebar-switcher a:hover,
+	.sidebar-switcher a:focus {
+		color: #000;
+	}
+}

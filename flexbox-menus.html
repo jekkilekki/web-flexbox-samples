@@ -7,12 +7,13 @@
 
 	<link rel="stylesheet" type="text/css" href="style-menus.css">
 	<link rel="stylesheet" type="text/css" href="style-cards.css">
+	<link rel="stylesheet" type="text/css" href="holy-grail.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
-	<div id="page" class="outer-wrap">
+	<div id="page">
 	<header class="masthead clear">
 		<div class="centered site-branding">
 			<h1 class="site-title">Learning Flexbox</h1>
@@ -20,6 +21,204 @@
 	</header><!-- .masthead -->
 
 	<main class="main-area">
+
+	<div class="outer-wrap">
+
+		<header class="page-header">
+			<div class="sidebar-switcher">
+				Select layout: <a href="#" class="sidebar-left-toggle"><i class="fa fa-align-left"></i></a> <a href="#" class="sidebar-right-toggle"><i class="fa fa-align-right"></i></a> <a href="#" class="no-sidebar-toggle"><i class="fa fa-align-justify"></i></a> <a href="#" class="remove-sidebar-toggle"><i class="fa fa-arrow-circle-right"></i></a>
+			</div>
+			<h1 class="section-title">Holy Grail Layout</h1>
+			<div class="nav-mixed menu">
+				<nav id="dropdown-nav" class="dropdown-nav menu" role="navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Motivation</a></li>
+					<li class="has-children">
+						<a href="#">Language Skills<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child</span></button>
+						<ul class="sub-menu">
+							<li><a href="#">Reading</a></li>
+							<li><a href="#">Writing</a></li>
+							<li><a href="#">Listening</a></li>
+							<li><a href="#">Speaking</a></li>
+						</ul>
+						</a>
+					</li>
+					<li><a href="#">Vocabulary</a></li>
+					<li><a href="#">Grammar</a></li>
+					<li class="has-children">
+						<a href="#">Special Interest<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child</span></button>
+						<ul class="sub-menu">
+							<li><a href="#">Music</a></li>
+							<li><a href="#">Movies</a></li>
+							<li><a href="#">Manga (Comics)</a></li>
+							<li><a href="#">TV</a></li>
+						</ul>
+						</a>
+					</li>
+					<li><a href="#">Events</a></li>
+				</ul>
+				</nav><!-- #dropdown-nav .dropdown-nav -->
+
+				<nav id="social-nav" class="social-nav menu" role="navigation">
+				<ul>
+					<li><a href="http://www.twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+					<li><a href="http://www.facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+					<li><a href="http://www.linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+					<li><a href="http://www.youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+					<li><a href="http://www.instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+				</ul>
+				</nav><!-- #social-nav .social-nav -->
+			</div><!-- .nav-mixed -->
+		</header>
+
+		<div class="content">
+		<main class="page-main">
+
+			<section class="cards">
+
+			<article id="article-1" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2015/04/kotesol-regional-2015-img-300x400.png" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>KOTESOL 2015 Jeonju-North Jeolla Regional Conference Poster</h2>
+						<p>I enjoy making these posters (mostly because I enjoy looking at them when they're posted - and I personally think my designs look better than the other KOTESOL poster designs).</p>
+						<p>However, when I was given the Conference title this time - "Teaching English: What's Left to Learn?" - I was a little stumped. I wasn't sure whether or not to take this question rhetorically or literally and there isn't honestly much "visual" going on within the question itself to give me an idea of how to best design the poster.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-2" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2015/03/kotesol-2015-international.jpg" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>KOTESOL 2015 International Conference Poster Concept</h2>
+						<p>This design was created as an entry for the KOTESOL poster design contest they were running in September 2014.</p>
+						<p>I've designed posters for KOTESOL in the past - even designed the poster for the 20th Anniversary International Conference, so I was interested to submit a design for this contest as well. Unfortunately, this design was not accepted (I'm not sure if any design was), but I'm still proud of it and I enjoyed making it.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-3" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2014/03/final.png" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>KOTESOL 2014 Jeonju-North Jeolla Regional Conference</h2>
+						<p>I was given the Conference Theme "Focusing on Student Differences: Responding to Individual Needs" and told that Sherlock was the main topic of discussion among the organizers. They indicated that it might fit with the them well to show Sherlock Holmes as an "investigator" who was focusing on different students' needs.</p>
+						<p>Although Benedict Cumberbatch was mentioned, his Sherlock didn't use the traditional magnifying glass and licensing of a Cumberbatch picture would have likely been a pain, so I decided to go with just a magnifying glass and not any actual picture of Holmes himself (even the traditional one).</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-4" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2014/01/final.png" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>KOTESOL 20th Annual International Conference Poster</h2>
+						<p>After seeing my work on the Jeonju-North Jeolla KOTESOL 2012 Regional Conference Poster, Phil Owen, the 2012 Conference Chair, asked me to consider doing the poster design for the 20th Annual International Conference. "I'd love to,"" I said.</p>
+						<p>All the ideas for this design came in the form of email correspondence and there was no "official" design brief. However, I've done my best to collect the main points of our emails and focus them into an "unofficial" brief:</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-5" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2014/03/Teachers-as-Chameleons-update.jpg" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>KOTESOL 2012 Jeonju-North Jeolla Regional Conference</h2>
+						<p>Allison, one of the organizing members of the conference and the usual poster creator appreciated my work on the first One Accord posters and asked me to do this poster for them. Below is her initial mockup design for inspiration.</p>
+						<p>For the PPT design, I thought it would be interesting to have two Title Slides that showed the chameleon blending into the flower in the background. You can see how this worked in my own PPT presentation for the conference embedded below.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-6" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2013/10/Screen-shot-2013-10-26-at-11.56.33-PM.png" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>One Accord 2013: Freedom</h2>
+						<p>I talked with Justin Bell (from Sujeong Church) a bit and decided a good theme for this year is FREEDOM. I've personally been studying Exodus recently and how God freed the Israelites from captivity as a PREVIEW for how Jesus sets everyone (who believes) free from sin and death.</p>
+						<p>We decided to go with a single color for all church t-shirts - blue. But in order to accommodate everyone, there are two blues: "sora" (light blue) and navy. Different colored shirts are nice, but they keep us "segregated" in some ways as well.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-7" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2012/11/main-poster-large.png" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>One Accord 2012: Harvest</h2>
+						<p>During the initial planning for One Accord 2012, I asked the other leaders (via email) if they had any suggestions for a theme for the event. Justin Bell responded saying that he felt "Reaping the Harvest" was an appropriate theme. I personally was hesitant to specifically call it "Reaping the Harvest" because I was worried that any non-Christians attendees might find that theme a bit too pushy ~ as in "Are they referring to me?"</p>
+						<p>However, due to the event timing (the American Thanksgiving weekend) and the general feeling during the season, I agreed that "Harvest" would be a good theme and "A Celebration of Thanksgiving" would be a better angle. Thus, the designs reflect that.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-8" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2011/12/Christmas.png" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>One Accord 2011: Christmas</h2>
+						<p>In the West, Christmas caroling is very nostalgic and traditional aspect of the Christmas season. We've all (Westerners anyway) seen at least a handful of movies and TV shows during the season that show carolers outside, in front of some house, singing. It seems to build unity, fellowship, camaraderie, and warmth in our hearts during the cold winter season, so we decided it would be a fun thing to do with One Accord churches.</p>
+						<p>The event began at Gaeksa downtown and progressed through the downtown area toward Hanok Village where it was eventually ended early due to the cold. Still, it was quite a unique experience.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-9" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2011/10/for-facebook.jpg" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>One Accord 2011: Unity</h2>
+						<p>Planning for this FIRST One Accord event began in August 2011, with me being added to the communications on August 30th. The following is from the initial email communication with Paul Church:</p>
+						<p>The idea for this event originated with a shared friendship between the (then) leaders of Paul Church, Antioch Church, and Jungbu Church and their hope to unite the English ministries to get to know and encourage other Christians in Jeonju.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+
+		</section><!-- .cards -->
+
+
+			<article class="post-content">
+				<h2>Title</h2>
+				<p>Paragraph(s)</p>
+			</article>
+
+		</main>
+
+		<aside class="sidebar">
+			<div class="squish-container">
+			<h3>Sidebar Menu</h3>
+			<nav class="sidebar-menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Motivation</a></li>
+					<li><a href="#">Language Skills</a></li>
+					<li><a href="#">Vocabulary</a></li>
+					<li><a href="#">Grammar</a></li>
+					<li><a href="#">Special Interest</a></li>
+					<li><a href="#">Events</a></li>
+				</ul>
+			</nav>
+			</div>
+		</aside>
+		</div><!-- .content -->
+
+		<footer class="page-footer">
+			<p>Content</p>
+		</footer>
+
+	</div><!-- .outer-wrap -->
 
 	<div class="centered">
 
@@ -205,124 +404,113 @@
 			<article id="article-1" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2015/04/kotesol-regional-2015-img-300x400.png" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>KOTESOL 2015 Jeonju-North Jeolla Regional Conference Poster</h2>
+						<p>I enjoy making these posters (mostly because I enjoy looking at them when they're posted - and I personally think my designs look better than the other KOTESOL poster designs).</p>
+						<p>However, when I was given the Conference title this time - "Teaching English: What's Left to Learn?" - I was a little stumped. I wasn't sure whether or not to take this question rhetorically or literally and there isn't honestly much "visual" going on within the question itself to give me an idea of how to best design the poster.</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 			<article id="article-2" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2015/03/kotesol-2015-international.jpg" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>KOTESOL 2015 International Conference Poster Concept</h2>
+						<p>This design was created as an entry for the KOTESOL poster design contest they were running in September 2014.</p>
+						<p>I've designed posters for KOTESOL in the past - even designed the poster for the 20th Anniversary International Conference, so I was interested to submit a design for this contest as well. Unfortunately, this design was not accepted (I'm not sure if any design was), but I'm still proud of it and I enjoyed making it.</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 			<article id="article-3" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2014/03/final.png" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>KOTESOL 2014 Jeonju-North Jeolla Regional Conference</h2>
+						<p>I was given the Conference Theme "Focusing on Student Differences: Responding to Individual Needs" and told that Sherlock was the main topic of discussion among the organizers. They indicated that it might fit with the them well to show Sherlock Holmes as an "investigator" who was focusing on different students' needs.</p>
+						<p>Although Benedict Cumberbatch was mentioned, his Sherlock didn't use the traditional magnifying glass and licensing of a Cumberbatch picture would have likely been a pain, so I decided to go with just a magnifying glass and not any actual picture of Holmes himself (even the traditional one).</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 			<article id="article-4" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2014/01/final.png" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>KOTESOL 20th Annual International Conference Poster</h2>
+						<p>After seeing my work on the Jeonju-North Jeolla KOTESOL 2012 Regional Conference Poster, Phil Owen, the 2012 Conference Chair, asked me to consider doing the poster design for the 20th Annual International Conference. "I'd love to,"" I said.</p>
+						<p>All the ideas for this design came in the form of email correspondence and there was no "official" design brief. However, I've done my best to collect the main points of our emails and focus them into an "unofficial" brief:</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 			<article id="article-5" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2014/03/Teachers-as-Chameleons-update.jpg" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>KOTESOL 2012 Jeonju-North Jeolla Regional Conference</h2>
+						<p>Allison, one of the organizing members of the conference and the usual poster creator appreciated my work on the first One Accord posters and asked me to do this poster for them. Below is her initial mockup design for inspiration.</p>
+						<p>For the PPT design, I thought it would be interesting to have two Title Slides that showed the chameleon blending into the flower in the background. You can see how this worked in my own PPT presentation for the conference embedded below.</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 			<article id="article-6" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2013/10/Screen-shot-2013-10-26-at-11.56.33-PM.png" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>One Accord 2013: Freedom</h2>
+						<p>I talked with Justin Bell (from Sujeong Church) a bit and decided a good theme for this year is FREEDOM. I've personally been studying Exodus recently and how God freed the Israelites from captivity as a PREVIEW for how Jesus sets everyone (who believes) free from sin and death.</p>
+						<p>We decided to go with a single color for all church t-shirts - blue. But in order to accommodate everyone, there are two blues: "sora" (light blue) and navy. Different colored shirts are nice, but they keep us "segregated" in some ways as well.</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 			<article id="article-7" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2012/11/main-poster-large.png" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>One Accord 2012: Harvest</h2>
+						<p>During the initial planning for One Accord 2012, I asked the other leaders (via email) if they had any suggestions for a theme for the event. Justin Bell responded saying that he felt "Reaping the Harvest" was an appropriate theme. I personally was hesitant to specifically call it "Reaping the Harvest" because I was worried that any non-Christians attendees might find that theme a bit too pushy ~ as in "Are they referring to me?"</p>
+						<p>However, due to the event timing (the American Thanksgiving weekend) and the general feeling during the season, I agreed that "Harvest" would be a good theme and "A Celebration of Thanksgiving" would be a better angle. Thus, the designs reflect that.</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 			<article id="article-8" class="card">
 				<a href="#">
 					<figure class="thumbnail">
-						<img src="" alt="">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2011/12/Christmas.png" alt="">
 					</figure>
 					<div class="card-content">
-						<h2></h2>
-						<p></p>
+						<h2>One Accord 2011: Christmas</h2>
+						<p>In the West, Christmas caroling is very nostalgic and traditional aspect of the Christmas season. We've all (Westerners anyway) seen at least a handful of movies and TV shows during the season that show carolers outside, in front of some house, singing. It seems to build unity, fellowship, camaraderie, and warmth in our hearts during the cold winter season, so we decided it would be a fun thing to do with One Accord churches.</p>
+						<p>The event began at Gaeksa downtown and progressed through the downtown area toward Hanok Village where it was eventually ended early due to the cold. Still, it was quite a unique experience.</p>
+					</div><!-- .card-content -->
+				</a>
+			</article><!-- .card -->
+			<article id="article-9" class="card">
+				<a href="#">
+					<figure class="thumbnail">
+						<img src="http://www.aaronsnowberger.com/wp-content/uploads/2011/10/for-facebook.jpg" alt="">
+					</figure>
+					<div class="card-content">
+						<h2>One Accord 2011: Unity</h2>
+						<p>Planning for this FIRST One Accord event began in August 2011, with me being added to the communications on August 30th. The following is from the initial email communication with Paul Church:</p>
+						<p>The idea for this event originated with a shared friendship between the (then) leaders of Paul Church, Antioch Church, and Jungbu Church and their hope to unite the English ministries to get to know and encourage other Christians in Jeonju.</p>
 					</div><!-- .card-content -->
 				</a>
 			</article><!-- .card -->
 
 		</section><!-- .cards -->
-
-	</div><!-- .centered -->
-
-	<div class="content">
-
-		<header class="page-header">
-			<h1 class="section-title">Holy Grail Layout</h1>
-			<nav class="page-menu">Nav menu here</nav>
-		</header>
-
-		<main class="page-main">
-			<article class="post-content">
-				<h2>Title</h2>
-				<p>Paragraph(s)</p>
-			</article>
-		</main>
-
-		<aside class="sidebar">
-			<div class="squish-container">
-			<h3>Menu</h3>
-			<nav class="sidebar-menu">
-				<ul>
-					<li><a href="#">Menu Item</a></li>
-				</ul>
-			</nav>
-			</div>
-		</aside>
-
-		<footer class="page-footer">
-			<p>Content</p>
-		</footer>
 
 	</div><!-- .centered -->
 
@@ -335,5 +523,6 @@
 
 	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
 	<script type="text/javascript" src="js/menu-toggle.js"></script>
+	<script type="text/javascript" src="js/sidebar-switcher.js"></script>
 </body>
 </html>
