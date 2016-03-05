@@ -1,0 +1,253 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learning Flexbox</title>
+	<meta name="description" content="Flexbox blog">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<!-- HEADER ------------------------------------- -->
+	<header class="masthead">
+
+		<div class="site-branding">
+			<img class="site-logo" src="img/logo.png" width="30" /> <!-- Put your logo here -->
+			<hgroup>
+				<h1 class="site-title">GPA Computer Classes</h1> <!-- Put your website title here -->
+				<p class="site-description"></p>
+			</hgroup>
+		</div><!-- .site-branding -->
+		
+		<div class="menu-container">
+			<nav id="main-menu" class="main-nav nav-menu" role="navigation">
+				<!-- Enter an unordered list of links here (Home, About, Blog, Contact) -->
+				<ul>
+					<li><a href="front.html">Home</a></li> <!-- Front/Home Page -->
+					<li class="has-children">
+						<a href="layouts.html">Layouts<button class="dropdown-toggle" aria-expanded="false"><span></span></button></a>
+						<ul class="sub-menu">
+							<li><a href="blog.html">Blog</a></li> <!-- Blog Index (5 articles + sidebar) -->
+							<li><a href="article.html">Blog Article</a></li> <!-- Single Article -->
+							<li><a href="store.html">Store</a></li> <!-- e-Commerce Index (with featured slider) -->
+							<li><a href="product.html">Product Page</a></li> <!-- Single Product -->
+							<li><a href="checkout.html">Cart/Checkout</a></li> <!-- Cart Page -->
+							<li><a href="community.html">Community</a></li> <!-- Community Page -->
+						</ul>
+					</li> 
+					<li class="has-children">
+						<a href="pages.html">Pages<button class="dropdown-toggle" aria-expanded="false"><span></span></button></a>
+						<ul class="sub-menu">
+							<li><a href="landing.html">Landing</a></li> <!-- Landing Page -->
+							<li><a href="about.html">About</a></li> <!-- Full-width Page -->
+							<li><a href="contact.html">Contact</a></li> <!-- Contact page with form and map -->
+							<li><a href="portfolio.html">Portfolio</a></li> <!-- Photo/card grid page -->
+							<li><a href="login.html">Login / Register</a></li> <!-- Login / Registration form page (form/validation) -->
+							<li><a href="forums.html">Forums</a></li> <!-- Forums Page -->
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div><!-- .menu-container -->
+
+	</header><!-- .masthead -->
+
+
+	<!-- BODY --------------------------------------- -->
+	<div id="wrapper">
+
+		<!-- CONTENT --- -->
+			<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+			<!-- This is the only part of the page you need to rewrite in every file -->
+			<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+			<section id="content" class="blog-page">
+				<h1 id="page-title">Blog</h1>
+				<article>
+					<!-- Every article needs an img, header, paragraph, and "Read more" link -->
+					<img src="img/hero.jpg" width="400" />
+					<h2>This is a blog title</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+						industry. Lorem Ipsum has been the industry's standard dummy 
+						text ever since the 1500s, when an unknown printer took a galley 
+						of type and scrambled it to make a type specimen book...
+					</p>
+					<a href="" class="read-more">Read more</a>
+				</article>
+				<article>
+					<!-- Every article needs an img, header, paragraph, and "Read more" link -->
+					<img src="img/hero.jpg" width="400" />
+					<h2>This is a blog title</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+						industry. Lorem Ipsum has been the industry's standard dummy 
+						text ever since the 1500s, when an unknown printer took a galley 
+						of type and scrambled it to make a type specimen book...
+					</p>
+					<a href="" class="read-more">Read more</a>
+				</article>
+				<article>
+					<!-- Every article needs an img, header, paragraph, and "Read more" link -->
+					<img src="img/hero.jpg" width="400" />
+					<h2>This is a blog title</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+						industry. Lorem Ipsum has been the industry's standard dummy 
+						text ever since the 1500s, when an unknown printer took a galley 
+						of type and scrambled it to make a type specimen book...
+					</p>
+					<a href="" class="read-more">Read more</a>
+				</article>
+				<article>
+					<!-- Every article needs an img, header, paragraph, and "Read more" link -->
+					<img src="img/hero.jpg" width="400" />
+					<h2>This is a blog title</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+						industry. Lorem Ipsum has been the industry's standard dummy 
+						text ever since the 1500s, when an unknown printer took a galley 
+						of type and scrambled it to make a type specimen book...
+					</p>
+					<a href="" class="read-more">Read more</a>
+				</article>
+				<article>
+					<!-- Every article needs an img, header, paragraph, and "Read more" link -->
+					<img src="img/hero.jpg" width="400" />
+					<h2>This is a blog title</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+						industry. Lorem Ipsum has been the industry's standard dummy 
+						text ever since the 1500s, when an unknown printer took a galley 
+						of type and scrambled it to make a type specimen book...
+					</p>
+					<a href="" class="read-more">Read more</a>
+				</article>
+			</section>
+
+		<!-- SIDEBAR --- -->
+			<aside id="sidebar">
+				<div class="widget facts">
+					<!-- Enter an unordered list of 5 facts about this subject (with a header) -->
+					<h2>Facts about Programming</h2>
+					<ul>
+						<li>Java was invented in 1995.</li>
+						<li>Git is the best version control software available.</li>
+						<li>Sass + Grunt + WordPress + Foundation = awesome.</li>
+						<li>Every language has its own syntax and "grammar".</li>
+						<li>Computer programming is a job that will grow greatly in the future.</li>
+					</ul>
+				</div>
+				
+				
+				<div class="widget classes">
+					<!-- Enter an ordered list of your GPA class schedule (with a header) -->
+					<h2>GPA Classes</h2>
+					<ol start="4">
+						<li>Computer A: Computers + Office 101</li>
+						<li>AP Computer: Java Programming</li>
+						<li>Computer B: Intro to Website Programming</li>
+					</ol>
+				</div>
+				
+				
+				<div class="widget calendar">
+					<!-- Enter a table with a calendar for this month (with a header) -->
+					
+					<table>
+						<thead>
+							<tr> <!-- Days of the week -->
+								<th>M</th>
+								<th>T</th>
+								<th>W</th>
+								<th>Th</th>
+								<th>F</th>
+								<th>S</th>
+								<th>S</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr> <!-- Week one -->
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+							</tr>
+
+							<tr> <!-- Week two -->
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+							</tr>
+
+							<tr> <!-- Week three -->
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+							</tr>
+
+							<tr> <!-- Week four -->
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+							</tr>
+
+							<tr> <!-- Week five -->
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</aside>
+			
+			<div class="clear"></div>
+	</div>
+
+
+	<!-- FOOTER ------------------------------------ -->
+	<footer>
+		<div class="footer-wrapper">
+			
+			<nav>
+				<!-- Put the same links from the header here (but style them differently) -->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="store.html">Store</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<div class="sns">
+				<!-- Make an unordered list of THREE links to your social media here -->
+				<ul>
+					<li><a class="github" href="https://github.com/jekkilekki">GitHub</a></li>
+					<li><a class="facebook" href="https://www.facebook.com/jekkilekki">Facebook</a></li>
+					<li><a class="email" href="mailto:asnowberger@gpa.ac.kr">Email</a></li>
+				</ul>
+			</div>
+			
+			<p>&copy; 2015 Aaron Snowberger</p> <!-- Enter your name -->
+		</div>
+	</footer>
+
+</body>
+</html>
